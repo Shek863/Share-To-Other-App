@@ -5,7 +5,7 @@ fun share (message:String) {
   //intent.putExtra(Intent.EXTRA_SUBJET, "Partage de fichier")
   intent.putExtra(Intent.EXTRA_TEXT, message)
   
-  //Here we will check correct Gmail package 
+  //Here we will check correct Whatsapp package 
   val pm : PackageManager = context.PackageManager()
   val matches = pm.queryIntentActivities()
   val best: ResolveInfo? = null
